@@ -76,7 +76,7 @@ function LapTimeTotal() {
 }
 
 LapTimeTotal()
-*/
+
 
 let lapsCompleted = 0;
 
@@ -90,3 +90,38 @@ totalLapsCompleted()
 totalLapsCompleted()
 
 console.log(lapsCompleted)
+
+---------------------
+Variable string messages 
+---------------------
+
+
+let message = "You have three new notifications";
+
+console.log(message + ", " + username + "!")
+
+
+let username = "Ivan, ";
+
+let messageToUser = "You have successfully logged out!";
+
+console.log(username + messageToUser);
+
+
+let greetname = "43";
+let greeting = "Hi, my name is ";
+
+let myGreeting = greeting + greetname;
+
+console.log(myGreeting)
+*/
+
+let welcomeElement = document.getElementById("welcome-element");
+
+
+let fullName = "Ivan Gyimah, " 
+let greeting = "welcome to the Super App!"
+
+welcomeElement.innerText = greeting + fullName
+
+console.log(welcomeElement)
