@@ -7,16 +7,21 @@
 // Code variable counter to increase count when button is clicked
 // Change the count-el in the HTML to relect the new count 
 
+//Count function code area -------------
 
 let countEl = document.getElementById("count-element");
-
-console.log(countEl);
-
 let count = 0;
 
 function increment() {
     count = count + 1
     countEl.innerText = count
+  
+}
+
+// Save Funtction ----------
+
+function save() {
     console.log(count)
+    
 }
 
