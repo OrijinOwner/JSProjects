@@ -6,30 +6,54 @@
 //VARIABLES SECTION
 //----------------------
 
-let firstCard = 100;
+let firstCard = 10;
 let secondCard = 11;
 let userHasBlackJack = false
 let userIsAlive = true
 let message = null
 let sum = firstCard + secondCard;
+let messageElement = document.getElementById("dealer-el");
+let sumElement = document.getElementById("sum-el")
+let cardsElement = document.getElementById("cards-el")
+let newGameCard = 1
 
-console.log(sum)
 
-// Logic of the game
 
-if (sum < 21) {
-    message=("Draw a new card? 😊")
+// Logic of the game  
+// Start Game Function
+
+
+function startGame() {
+
+        if (sum < 21) {
+        message=("Draw a new card? 😊")
+        }
+        
+        else if (sum === 21) {
+        message=("You've got Blackjack! 🥳")
+        userHasBlackJack = true
+        }
+
+        else if (sum > 21) {
+            message=("You've lost! You're out the game. 😢")
+            userIsAlive = false
+        }
+
+        messageElement.textContent = message
+        sumElement.textContent =  "Sum:   " + sum 
+        cardsElement.textContent = "Your Cards are:  " + firstCard + "  ,  " + secondCard
+            
     }
-    
-    else if (sum === 21) {
-      message=("You've got Blackjack! 🥳")
-      userHasBlackJack = true
-    }
+        //New Card Function 
+            function newCard() {
+                console.log("Drawing out new card from deck...")
 
-    else if (sum > 21) {
-        message=("You've lost! You're out the game. 😢")
-        userIsAlive = false
-    }
+                
 
-    console.log(message)
-    
+                sum =+ newGameCard
+                startGame()
+            }
+
+        
+
+     
