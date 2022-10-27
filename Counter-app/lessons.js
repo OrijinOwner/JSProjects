@@ -116,7 +116,6 @@ let myGreeting = greeting + greetname;
 console.log(myGreeting)
 */
 
-let welcomeElement = document.getElementById("welcome-element");
 
 
 let fullName = "Ivan Gyimah, " 

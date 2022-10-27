@@ -8,7 +8,7 @@
 // Change the count-el in the HTML to relect the new count 
 
 //Count function code area -------------
-
+let saveElement = document.getElementById("save-element");
 let countEl = document.getElementById("count-element");
 let count = 0;
 
@@ -21,7 +21,10 @@ function increment() {
 // Save Funtction ----------
 
 function save() {
-    console.log(count)
-    
+    let saveCount = count + "   -   "
+    saveElement.innerText += saveCount
 }
+
+
+
 
