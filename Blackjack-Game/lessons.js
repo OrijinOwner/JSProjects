@@ -54,7 +54,7 @@ else if (sum === 21) {
 else if (sum > 21) {
     console.log("You're out of the game!")
 }
-*/
+
 
 //ARRAYS - Ordered Lists - 0 indexed - first item is always 0
 
@@ -79,8 +79,43 @@ let myLinkedIn = [
 
     ]
 
+    USE ".POP to remove last array"
+
         let newMessage = "Sounds great, I'll be in touch!"
         messages.push(newMessage)
 
         messages.pop()
         console.log(messages)
+
+        
+
+
+        //for Loop & and Count structure
+
+        //       START       FINISH    INCREMENT SIZE
+        for (let count = 10; count < 21; count += 1) {
+            
+    
+        }
+
+        for (let newCount = 10; newCount <101; newCount += 10) {
+
+        }
+*/ 
+        // FOR LOOPS & ARRAYS
+        
+        let cards = [
+            8,
+            9,
+            3
+        ]
+
+        
+        for (count = 0; count = cards.length; count += 1) {
+                console.log(count)
+        }
+
+
+        
+        //We will be back! Stopped at Random Functions
+        // Youtube time: 3:00:40

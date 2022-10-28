@@ -6,8 +6,8 @@
 //VARIABLES SECTION
 //----------------------
 
-let firstCard = 10;
-let secondCard = 4;
+let firstCard = 3;
+let secondCard = 8;
 let cards = [firstCard, secondCard]
 let userHasBlackJack = false
 let userIsAlive = true
@@ -27,6 +27,11 @@ let cardsElement = document.getElementById("cards-el")
 
 function renderGame() {
 
+        for (let i = 0; i < cards.length; i++) {
+            cardsElement.textContent += cards[i]
+        }
+
+
         if (sum < 21) {
         message=("Draw a new card? 😊")
         }
@@ -44,7 +49,11 @@ function renderGame() {
         messageElement.textContent = message
         sumElement.textContent =  "Sum:   " + sum 
         cardsElement.textContent = "Your Cards are:  " + cardArray[0] + "  ,  " + cardArray[1]
+
+
+         
             
+       
     }
         //New Card Function 
             function newCard() {
@@ -53,6 +62,7 @@ function renderGame() {
                 let card = 6
                 sum += card
                 renderGame()
+                
 
             }
 
@@ -68,6 +78,8 @@ function renderGame() {
                 secondCard, 
                 cards.push(newCard)
             ]
+ 
+            
 
             
         
