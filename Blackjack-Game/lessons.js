@@ -3,6 +3,7 @@
 
 // IF ELSE STATEMENTS: First Example
 
+/* 
 let age = 21;
 
 if (age < 21) {
@@ -36,7 +37,7 @@ else if (personAge < 100) {
 else if (personAge === 100) {
     console.log("Happy Birthday, you card will be sent shortly.")
 }
-// If older than 100 you are not eligible, as you had one 
+If older than 100 you are not eligible, as you had one 
 
 let firstCard = 61;
 let secondCard = 11;
@@ -53,3 +54,68 @@ else if (sum === 21) {
 else if (sum > 21) {
     console.log("You're out of the game!")
 }
+
+
+//ARRAYS - Ordered Lists - 0 indexed - first item is always 0
+
+let myLinkedIn = [
+    "University: Buckinghamshire New University",
+    "Licences: CFA Investment Foundations",
+    "Skills: Web3, Blockchain & Crypto"
+]
+
+
+
+ let ivanGyimah = [
+    "Ivan",
+    28,
+    true
+]
+
+    let messages = [
+        "Hey, I hope you are well!",
+        "I am doing very well thank you.",
+        "Glad to hear, let's meet up soon!"
+
+    ]
+
+    USE ".POP to remove last array"
+
+        let newMessage = "Sounds great, I'll be in touch!"
+        messages.push(newMessage)
+
+        messages.pop()
+        console.log(messages)
+
+        
+
+
+        //for Loop & and Count structure
+
+        //       START       FINISH    INCREMENT SIZE
+        for (let count = 10; count < 21; count += 1) {
+            
+    
+        }
+
+        for (let newCount = 10; newCount <101; newCount += 10) {
+
+        }
+*/ 
+        // FOR LOOPS & ARRAYS
+        
+        let cards = [
+            8,
+            9,
+            3
+        ]
+
+        
+        for (count = 0; count = cards.length; count += 1) {
+                console.log(count)
+        }
+
+
+        
+        //We will be back! Stopped at Random Functions
+        // Youtube time: 3:00:40
