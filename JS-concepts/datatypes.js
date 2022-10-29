@@ -21,3 +21,5 @@ Number // Numbers for calculations etc.
 
 let t = 8;
 console.log(typeof x);
+
+//---------------------------------------------
