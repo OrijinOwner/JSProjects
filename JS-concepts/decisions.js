@@ -1,0 +1,1 @@
+//Decsions ask JS to asses whether an express or a vaiable is either true or false. Example below.
